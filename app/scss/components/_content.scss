@@ -9,7 +9,6 @@
     width: 100%;
   }
   thead tr {
-    background: $orange_l4;
     min-height: 20px;
   }
   thead tr td {
@@ -41,10 +40,8 @@
   }
 
   tbody tr:nth-child(odd) {
-    background: $aqua_l4;
   }
   tbody tr:nth-child(even) {
-    background: $light;
   }
   tbody tr {
     &:nth-child(n+2) {
@@ -131,7 +128,6 @@
       margin-bottom: 14px;
       &:before {
         content: '—';
-        color: $orange;
         display: inline-block;
         width: 26px;
         margin-left: -26px;

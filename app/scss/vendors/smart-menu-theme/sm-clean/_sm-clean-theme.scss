@@ -10,6 +10,27 @@
 // ----------------------------------------------------------
 // :: 1.1. Colors
 // ----------------------------------------------------------
+$dark: #242424;
+$dark_1: lighten($dark, 5%);
+$dark_2: lighten($dark, 10%);
+$dark_3: lighten($dark, 20%);
+$dark_4: lighten($dark, 30%);
+$dark_5: lighten($dark, 40%);
+$dark_6: lighten($dark, 50%);
+$dark_7: lighten($dark, 60%);
+$dark_8: lighten($dark, 70%);
+$dark_9: lighten($dark, 80%);
+
+$default: #05C8B2;
+$default_l1: lighten($default, 5%);
+$default_l2: lighten($default, 10%);
+$default_l3: lighten($default, 35%);
+$default_l4: lighten($default, 50%);
+
+$default_d1: darken($default, 5%);
+$default_d2: darken($default, 10%);
+$default-d3: darken($default, 15%);
+$default_d4: darken($default, 20%);
 
 $sm-clean__white:										#fff !default;
 $sm-clean__gray:										darken($sm-clean__white, 6.5%) !default;
@@ -24,16 +45,16 @@ $sm-clean__box-shadow:									rgba(0, 0, 0, 0.2) !default;
 // :: 1.2. Breakpoints
 // ----------------------------------------------------------
 
-$sm-clean__desktop-vp:									1068px !default;		// switch from collapsible to desktop
+$sm-clean__desktop-vp:									1100px !default;		// switch from collapsible to desktop
 
 
 // ----------------------------------------------------------
 // :: 1.3. Typography
 // ----------------------------------------------------------
 
-$sm-clean__font-family:									"Roboto";
-$sm-clean__font-size-base:								16px !default;
-$sm-clean__font-size-small:								16px !default;
+$sm-clean__font-family:									"Rubik",sans-serif;
+//$sm-clean__font-size-base:								16px !default;
+//$sm-clean__font-size-small:								16px !default;
 $sm-clean__line-height:									16px !default;
 
 
@@ -41,8 +62,8 @@ $sm-clean__line-height:									16px !default;
 // :: 1.4. Borders
 // ----------------------------------------------------------
 
-$sm-clean__border-width:								1px !default;
-$sm-clean__border-radius:								5px !default;
+$sm-clean__border-width:								0px !default;
+$sm-clean__border-radius:								0px !default;
 
 
 // ----------------------------------------------------------
@@ -92,8 +113,8 @@ $sm-clean__desktop-item-color:							$light !default;
 $sm-clean__desktop-item-hover-color:					$light !default;
 $sm-clean__desktop-item-current-color:					$light !default;
 $sm-clean__desktop-item-disabled-color:					darken($sm-clean__gray, 20%) !default;
-$sm-clean__desktop-item-padding-vertical:				10px !default;
-$sm-clean__desktop-item-padding-horizontal:				16px !default;
+$sm-clean__desktop-item-padding-vertical:				0px !default;
+$sm-clean__desktop-item-padding-horizontal:				0px !default;
 
 // Sub menu indicators
 $sm-clean__desktop-arrow-size:							6px !default;		// border-width
@@ -156,11 +177,12 @@ $sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
 
 // Main menu box
 .sm-clean {
-	background: #FFE7D6;
+	background: transparent;
 	border-radius: 0px;
 
 	// Main menu items
 	a {
+		color: $dark;
 		&,
 		&:hover,
 		&:focus,
@@ -168,12 +190,12 @@ $sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
 			padding: $sm-clean__collapsible-item-padding-vertical $sm-clean__collapsible-item-padding-horizontal;
 			/* make room for the toggle button (sub indicator) */
 			padding-right: $sm-clean__collapsible-item-padding-horizontal + $sm-clean__toggle-size + $sm-clean__toggle-spacing;
-			color: $sm-clean__collapsible-item-color;
-			font-family: $sm-clean__font-family;
-			font-size: $sm-clean__font-size-base;
-			font-weight: normal;
-			line-height: $sm-clean__line-height;
-			text-decoration: none;
+			color: $dark;
+			//font-family: $sm-clean__font-family;
+
+			//font-weight: normal;
+			//line-height: $sm-clean__line-height;
+			//text-decoration: none;
 		}
 
 		&.current {
@@ -216,7 +238,7 @@ $sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
 
 	// Main menu items separators
 	li {
-		border-top: 1px solid $orange;
+		border-top: 1px solid $dark_8;
 	}
 	> li:first-child {
 		border-top: 0;
@@ -232,7 +254,7 @@ $sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
 			&:hover,
 			&:focus,
 			&:active {
-				font-size: 16px;
+
 				// add indentation for sub menus text
 			}
 		}
@@ -277,24 +299,26 @@ $sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
 			&:focus,
 			&:active,
 			&.highlighted {
-				padding: 11px 16px;
-				color: $light;
+				padding: 0;
+				color: $dark;
 				border-radius: 0 !important;
+				transition: .35s;
 			}
 
 			&:hover,
 			&:focus,
 			&:active,
 			&.highlighted {
-				color: $light;
+				color: $default;
+				transition: .35s;
 			}
 
 			&.current {
-				color: $light;
+				color: $default;
 			}
 
 			&.disabled {
-				color: $light;
+				color: $default;
 			}
 
 			// Make room for the sub arrows
@@ -307,13 +331,12 @@ $sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
 				top: 50%;
 				transform: translate(0, -50%);
 				//margin-top: -(ceil($sm-clean__desktop-arrow-size / 2));
-				right: 8px;
-				width: 6px;
-				height: 3px;
+				//right: 8px;
+				//width: 6px;
+				//height: 3px;
 				//border-width: $sm-clean__desktop-arrow-size;
 				//border-style: solid dashed dashed dashed;
 				//border-color: $sm-clean__desktop-arrow-color transparent transparent transparent;
-				background: url(../img/header/catalog-arrow-down.svg) center center no-repeat;
 
 				//border-radius: 0;
 			}
@@ -326,6 +349,7 @@ $sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
 		// No main menu items separators
 		li {
 			border-top: 0;
+			width: fit-content;
 		}
 
 		// First sub level carets

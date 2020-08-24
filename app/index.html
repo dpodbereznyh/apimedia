@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="img/header/logo.png">
+    <link rel="icon" href="../img/header/header-logo.svg">
     <!--<link rel="apple-touch-icon" href="img/header/logo.png">-->
     <!--<link rel="apple-touch-icon" sizes="72x72" href="img/header/logo.png">-->
     <!--<link rel="apple-touch-icon" sizes="114x114" href="img/header/logo.png">-->
@@ -17,10 +17,151 @@
 
 <body>
 <main class="main">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__circle"></div>
+            <nav class="main-nav" role="navigation">
+                <input id="main-menu-state" type="checkbox" />
+                <label class="main-menu-btn" for="main-menu-state">
+                    <span class="main-menu-btn-icon"></span>
+                </label>
 
+                <a class="nav-brand header__logo">
+                    <img src="../img/header/header-logo.svg" alt="">
+                </a>
+                <!-- Sample menu definition -->
+                <ul id="main-menu" class="sm sm-clean">
+                    <li><a href="#" class="p">Описание</a></li>
+                    <li><a href="#" class="p">Стоимость</a></li>
+                    <li><a href="#" class="p">О нас</a></li>
+                    <li><a href="#" class="p">Контакты</a></li>
+                    <li><a href="#" class="p">Кейсы</a></li>
+                    <li class="header__phone">
+                        <div class="header__phone_icon">
+                            <img src="../img/header/header-phon-icon.svg" alt="Контактный телефон">
+                        </div>
+                        <a href="tel:+79005843700" class="h4 header__phone_text">
+                            8 (900) 584-37-00
+                        </a>
+                    </li>
+                    <li class="header__btn_wrap">
+                        <a href="#" data-src="popup-feedback" data-fancybox class="header__btn btn p">
+                            Оставить заявку
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="main-screen">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="main-screen__image_wrap">
+                        <div class="main-screen__image_bg">
+                            <img src="../img/main-screen/notebook.jpg" alt="notebook">
+                        </div>
+                        <div class="main-screen__image_manager">
+                            <img src="../img/main-screen/manager.png" alt="manager">
+                        </div>
+                        <div class="main-screen__image_circle_top"></div>
+                        <div class="main-screen__image_circle_bottom"></div>
+                    </div>
+                </div>
+                <div class="offset-xl-1 col-xl-5">
+                    <div class="main-screen__about">
+                        <div class="main-screen__about_time">
+                            <div class="main-screen__about_time_icon">
+                                <img src="../img/main-screen/stopwatch-icon.svg" alt="stopwatch-icon">
+                            </div>
+                            <p class="main-screen__about_time_text p">
+                                Время прочтения  - 2 минуты
+                            </p>
+                        </div>
+                        <div class="main-screen__about_circle"></div>
+                        <p class="main-screen__about_title hm">
+                            Здравствуйте,<br>
+                            меня зовут Дмитрий
+                        </p>
+                        <p class="main-screen__about_text hr">
+                            Именно со мной Вы будете разговаривать по телефону или переписываться по почте
+                        </p>
+                        <p class="main-screen__about_text hr">
+                            Можно я проведу Вам небольшую экскурсию по нашему сайту?
+                        </p>
+                        <p class="main-screen__about_text hr">
+                            Для начала, определимся, что же такое контекстная реклама и почему она так актуальна для любого бизнеса?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-screen__mouse"></div>
+        </div>
+    </section>
+    <section class="section about">
+        <div class="container-fluid">
+            <p class="hm section__title">
+                Что такое контекстная реклама
+            </p>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="about__left">
+                        <p class="about__left_text hr">
+                            Каждый раз, когда кто-либо ищет товары или услуги в <span style="color: #FF0000">Я</span>ндекс и <span style="color: #4885ED">G</span><span style="color: #DB3236">o</span><span style="color: #F4C20D">o</span><span style="color: #4885ED">g</span><span style="color: #3CBA54">l</span><span style="color: #DB3236">e</span>, он встречается с контекстной рекламой
+                        </p>
+                        <p class="about__left_text hr">
+                            Первые и последние четыре сайта в результатах поиска
+                        </p>
+                        <p class="about__left_text hr">
+                            Владельцы сайтов платят поисковым системам за это. Цена варьируется в зависимости от ниши, но обычно это
+                        </p>
+                        <div class="about__left_decoration">
+                            <div class="about__left_decoration_circle_bg"></div>
+                            <div class="about__left_decoration_circle"></div>
+                            <p class="about__left_decoration_text hm">
+                                около <span hm>25-30</span> рублей
+                            </p>
+                            <div class="about__left_decoration_image">
+                                <img src="../img/about/laptop-left.png" alt="laptop">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-6"></div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer" id="footer">
-
+    <div class="container-fluid">
+        <h3 class="footer__title h3">
+            Получить персональное предложение
+        </h3>
+        <form class="footer__form">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <input class="footer__form_input p" type="text" placeholder="Имя" >
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input class="footer__form_input p" type="tel" placeholder="Ваш телефон*" required>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input class="footer__form_input p" type="text" placeholder="Сообщение" >
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input class="footer__form_input p footer__form_btn" type="submit" placeholder="Сообщение" >
+                </div>
+            </div>
+            <label class="footer__form_label">
+                <input type="checkbox" id="checkbox" class="footer__form_checkbox" checked required>
+                <span class="footer__form_checkbox-span"></span>
+                <span href="#" target="_blank" class="small footer__form_label_link" target="_blank">
+                    Даю согласие на обработку персональных данных
+                </span>
+            </label>
+        </form>
+    </div>
 </footer>
 
 
