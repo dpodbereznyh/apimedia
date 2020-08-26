@@ -1,7 +1,7 @@
 @import "../abstracts/mixins";
 
-@include font-face("Rubik", "app/fonts/Rubik/Rubik-Regular");
-@include font-face("Rubik-Medium", "../fonts/Rubik/Rubik-Medium");
+@include font-face("Rubik", "../fonts/Rubik/Rubik-Regular", 400);
+@include font-face("Rubik", "../fonts/Rubik/Rubik-Medium", 500);
 
 
 @include font-face("iconmoon", "../fonts/icomoon/icomoon");
