@@ -320,10 +320,11 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 39px;
-    height: 39px;
+    transform: translate(9px, 135px);
+    width: 59px;
+    height: 59px;
     border-radius: 50%;
-    background: linear-gradient(180deg, #B8CCFF 19.79%, #9150E4 100%);
+    background: linear-gradient(180deg, #B8CCFF 19.79%, #9150E4 100%);    box-shadow: 0px 25px 35px rgba(68, 31, 216, 0.35);
     box-shadow: 0px 25px 35px rgba(68, 31, 216, 0.35);
   }
   &__mouse {
@@ -664,7 +665,37 @@
     position: relative;
   }
   &__image-even {
-    margin: 0 auto;
+    width: 323px;
+    height: 323px;
+    border-radius: 50%;
+    margin-right: 38px;
+    position: relative;
+    -webkit-filter: drop-shadow(0 35px 35px rgba(140, 182, 231, .55));
+    filter: drop-shadow(0 35px 35px rgba(140, 182, 231, .55));
+    &:after {
+      content: '';
+      display: block;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      border: 1px solid $secondary_l2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      border: 1px solid $secondary_l2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__image_circle-even {
     width: 33px;
@@ -684,7 +715,51 @@
       margin-bottom: 0;
     }
   }
+  &-odd {
+    padding: 64px 0;
+    background: $secondary_l4;
+  }
+  &__wrap-odd {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__image-odd-wrap {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1.5px solid $secondary_l2;
+  }
+  &__image-odd {
+    position: absolute;
+    width: 323px;
+    height: 323px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__text-odd {
+    max-width: 774px;
+    margin-bottom: 64px;
+  }
+
 }
+.over-russia {
+  position: absolute;
+  bottom: 38px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 /*****Banner End*****/
 
 /*****Stages*****/
@@ -907,7 +982,7 @@
 /*****Advantages*****/
 .advantages {
   padding-top: 52px;
-  margin-bottom: 128px;
+  margin-bottom: 92px;
   position: relative;
   &__item_title {
     text-align: center;
@@ -965,7 +1040,7 @@
 /*****Certificates*****/
 .certificates {
   position: relative;
-  margin-bottom: 128px;
+  margin-bottom: 92px;
   &__circle_left{
     width: 555px;
     height: 555px;
@@ -974,7 +1049,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-50%, -18px);
+    transform: translate(-50%, 19px);
   }
   &__circle_left_inner {
     width: 100%;
@@ -1022,8 +1097,12 @@
       transform: translate(118px,-18px);
     }
   }
+  &__swiper-wrapper {
+    padding: 35px 0;
+    filter: drop-shadow(0 3px 9px rgba(175, 187, 204, .35));
+
+  }
   &__swiper-slide {
-    filter: drop-shadow(0px 15px 35px rgba(175, 187, 204, 0.35));
     img {
       max-width: 100%;
       width: 100%;
@@ -1078,21 +1157,42 @@
   &__slider_button-prev {
     width: 75px;
     height: 75px;
-    background: red;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(-100%, -50%);
     outline: none;
-    &:before {
-      content: "\e900";
-      font-family: "iconmoon";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .35s;
+    &:hover > .icon-arrow-prev:before {
+      color: $default;
+      transition: .35s;
     }
   }
+  &__slider_button-next {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .35s;
+    &:hover > .icon-arrow-next:before {
+      color: $default;
+      transition: .35s;
+    }
+  }
+
   &__swiper-pagination {
     width: fit-content;
     height: fit-content;
-    margin: 0 auto;
+    margin: 45px auto 0;
     display: flex;
   }
   &__swiper_bullet {
@@ -1102,7 +1202,7 @@
     background: $dark;
     margin-right: 4px;
     border-radius: 50%;
-    margin-top: 32px;
+    //margin-top: 32px;
     &:last-child {
       margin-right: 0;
     }
@@ -1154,5 +1254,185 @@
 }
 .icon-arrow-next:before {
   content: "\e900";
+  color: #333;
+}
+.icon-arrow-prev:before {
+  content: "\e901";
+  color: #333;
 }
 /*****Customers End*****/
+/*****Why-us*****/
+.why-us {
+  margin-bottom: 128px;
+  &__item {
+    margin-bottom: 64px;
+  }
+  &__text_wrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  &__image_wrap {
+    position: relative;
+  }
+  &__image_bg {
+    width: 423px;
+    height: 423px;
+    border-radius: 50%;
+    border: 1px solid $secondary_l2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-27px,19px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    &:after {
+      content: '';
+      display: block;
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #B8CCFF 19.79%, #9150E4 100%);
+      box-shadow: 0px 35px 35px rgba(140, 182, 231, 0.55);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(21px,17px);
+    }
+  }
+  &__image_bg-inner {
+    width: 358px;
+    height: 358px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #B8CCFF 19.79%, #9150E4 100%);
+    opacity: 0.35;
+    box-shadow: 0px 35px 35px rgba(140, 182, 231, 0.55);
+  }
+  &__image {
+    width: 610px;
+    height: 335px;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0px 35px 35px rgba(140, 182, 231, 0.55));
+    }
+  }
+  &__image_bg-middle {
+    width: 561px;
+    height: 561px;
+    border-radius: 50%;
+    border: 1px solid $secondary_l2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-76%,-19%);
+    z-index: -1;
+  }
+  &__image_bg-middle-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #BCFAFA 0%, #767BEE 100%);
+      box-shadow: 0px 35px 35px rgba(140, 182, 231, 0.55);
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-81px, 36px);
+    }
+  }
+  &__text-middle {
+    text-align: right;
+  }
+  &__image-bottom {
+    position: relative;
+  }
+  &__image-circle {
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #B9F2FF 0%, #FCBFD5 100%);
+    box-shadow: 0px 35px 35px rgba(250, 161, 193, 0.35);
+    position: absolute;
+    top: -33px;
+    right: 0;
+  }
+}
+/*****Why-us*****/
+/*****Team*****/
+.team {
+  margin-bottom: 128px;
+  &__title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__list {
+    max-width: 995px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &__item_image {
+    margin-bottom: 32px;
+    max-width: 289px;
+    height: auto;
+    border-radius: 50%;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__item_title {
+    text-align: center;
+    font-weight: 500;
+    //margin-bottom: 16px;
+  }
+  &__item_description {
+    text-align: center;
+  }
+}
+/*****Team End*****/
+/*****Contacts*****/
+.contacts {
+  &_item {
+    display: flex;
+  }
+  &__item_icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    img  {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__item_link {
+    color: $dark;
+    transition: .35s;
+    margin-bottom: 16px;
+    &:hover {
+      color: $secondary_d4;
+      transition: .35s;
+    }
+  }
+  &__item_text {
+
+  }
+}
+/*****Contacts End*****/
