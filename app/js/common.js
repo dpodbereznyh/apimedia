@@ -71,26 +71,29 @@ $(document).ready(function () {
 
 
 });
-// Main Screen Swiper Slider
-var mainSlider = new Swiper ('.main-screen__swiper-container', {
-    slideClass: 'main-screen__swiper-slide',
-    wrapperClass: 'main-screen__swiper-wrapper',
+// Customers Swiper Slider
+var customersSlider = new Swiper ('.customers__swiper-container', {
+    slideClass: 'customers__swiper-slide',
+    wrapperClass: 'customers__swiper-wrapper',
     slidesPerView: 1,
     autoHeight: true,
-    lazy: true,
-    lazy: {
-        loadPrevNext: true,
-        watchSlidesVisibility: true,
-    },
     pagination: {
-        el: '.main-screen__swiper-pagination',
+        el: '.customers__swiper-pagination',
         type: 'bullets',
         clickable: true,
-        bulletClass: 'main-screen__swiper_bullet',
-        bulletActiveClass: 'main-screen__swiper_bullet-active'
+        bulletClass: 'customers__swiper_bullet',
+        bulletActiveClass: 'customers__swiper_bullet-active'
     },
     navigation: {
-        nextEl: '.main-screen__slider_button-next',
-        prevEl: '.main-screen__slider_button-prev',
+        nextEl: '.customers__slider_button-next',
+        prevEl: '.customers__slider_button-prev',
     }
+});
+
+//Certificates
+var certificatesSlider = new Swiper ('.certificates__swiper-container', {
+    slideClass: 'certificates__swiper-slide',
+    wrapperClass: 'certificates__swiper-wrapper',
+    slidesPerView: 2,
+    spaceBetween: 32,
 });

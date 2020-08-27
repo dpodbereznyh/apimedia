@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/iconmoon/icomoon.eot?brjo3q');
-  src:  url('../fonts/iconmoon/icomoon.eot?brjo3q#iefix') format('embedded-opentype'),
-    url('../fonts/iconmoon/icomoon.ttf?brjo3q') format('truetype'),
-    url('../fonts/iconmoon/icomoon.woff?brjo3q') format('woff'),
-    url('../fonts/iconmoon/icomoon.svg?brjo3q#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?d2y2s8');
+  src:  url('../fonts/icomoon.eot?d2y2s8#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?d2y2s8') format('truetype'),
+  url('../fonts/icomoon.woff?d2y2s8') format('woff'),
+  url('../fonts/icomoon.svg?d2y2s8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,33 +24,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-slider-prev-icon:before {
-  content: "\e908";
 
-}
-.icon-slider-next-icon:before {
-  content: "\e907";
-}
-.icon-catalog-location-icon:before {
-  content: "\e900";
-}
-.icon-catalog-color-icon:before {
-  content: "\e901";
-}
-.icon-catalog-fulfilment-icon:before {
-  content: "\e905";
-}
-.icon-catalog-use-icon:before {
-  content: "\e906";
-}
-.icon-catalog-surface-icon:before {
-  content: "\e903";
-  color: #fff;
-}
-.icon-catalog-arrow-right:before {
-  content: "\e904";
-  color: #fff;
-}
-.icon-catalog-material-icon:before {
-  content: "\e902";
-}
