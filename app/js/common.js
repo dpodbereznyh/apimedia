@@ -38,22 +38,8 @@ $(document).ready(function () {
         $(".js-zakaz").val(newinput);
     });
 
-    $(".form").submit(function(){
-        $.ajax({
-            type: "POST",
-            url: "send.php",
-            data: $(this).serialize()
-        }).done(function() {
-            // $(this).find("input").val("");
-            $.fancybox.open({
-                src: '#fancyalert',
-            });
-            $(".form").trigger("reset");
-        });
-        return false;
-    });
 
-    $(".form-popup").submit(function(){
+    $("#popup-form").submit(function(){
         $.ajax({
             type: "POST",
             url: "send.php",
@@ -64,7 +50,20 @@ $(document).ready(function () {
             $.fancybox.open({
                 src: '#fancyalert',
             });
-            $(".form-popup").trigger("reset");
+            $("#popup-form").trigger("reset");
+        });
+        return false;
+    });
+    $(".footer__form").submit(function(){
+        $.ajax({
+            type: "POST",
+            url: "send.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $.fancybox.open({
+                src: '#fancyalert',
+            });
+            $(".footer__form").trigger("reset");
         });
         return false;
     });

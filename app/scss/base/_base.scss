@@ -35,3 +35,6 @@ a:hover {
 .active {
   display: block;
 }
+button:focus {
+  outline: none;
+}

@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li class="header__btn_wrap">
-                        <a href="#" data-src="popup-feedback" data-fancybox class="header__btn btn p">
+                        <a href="#" data-src="#popup-form" data-fancybox class="header__btn btn p js-callback" data-title="Оставить заявку" data-input="Оставить заявку с шапки">
                             Оставить заявку
                         </a>
                     </li>
@@ -343,7 +343,7 @@
                             3900 ₽
                         </p>
                     </div>
-                    <a href="#" class="price__btn btn">
+                    <a href="#" data-src="#popup-form" data-fancybox class="price__btn btn js-callback" data-title="Написать нам" data-input="Написать нам">
                         НАПИСАТЬ НАМ
                     </a>
                 </li>
@@ -829,18 +829,19 @@
             Получить персональное предложение
         </h3>
         <form class="footer__form">
+            <input class="footer__form_input" type="hidden" value="Получить персональное предложение" name="title" required>
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
-                    <input class="footer__form_input p" type="text" placeholder="Имя" >
+                    <input class="footer__form_input p" type="text" placeholder="Имя" name="name">
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <input class="footer__form_input p" type="tel" placeholder="Ваш телефон*" required>
+                    <input class="footer__form_input p" type="tel" placeholder="Ваш телефон*" name="phone" required>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <input class="footer__form_input p" type="text" placeholder="Сообщение" >
+                    <input class="footer__form_input p" type="text" placeholder="Сообщение" name="messege">
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <input class="footer__form_input p footer__form_btn" type="submit" placeholder="Сообщение" >
+                    <input class="footer__form_input p footer__form_btn" type="submit">
                 </div>
             </div>
             <label class="footer__form_label">
@@ -852,7 +853,31 @@
             </label>
         </form>
     </div>
+    <div class="d-none">
+        <form id="popup-form">
+            <div class="popup-form">
+                <h2 class="popup-form-title js-title hm"></h2>
+                <input class="popup-form-input js-zakaz" type="hidden" value="" name="title" required>
+                <input class="popup-form-input" type="text" placeholder="Ваше имя" name="name">
+                <input class="popup-form-input" type="tel" placeholder="Ваш телефон" name="phone" required>
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="popup-form__btn btn">Отправить</button>
+                </div>
+                <label class="footer__form_label">
+                    <input type="checkbox" class="footer__form_checkbox" checked required>
+                    <span class="footer__form_checkbox-span"></span>
+                    <span href="#" target="_blank" class="small popup-form_label_link footer__form_label_link-popup" target="_blank">
+                    Даю согласие на обработку персональных данных
+                </span>
+                </label>
+            </div>
+        </form>
+        <div id="fancyalert" class="fancyalert">
+            <div class="fancyalert-text">Спасибо за заявку,<br> в ближайшее время с Вами свяжутся!</div>
+        </div>
+    </div>
 </footer>
+
 
 
 

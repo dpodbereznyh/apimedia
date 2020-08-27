@@ -2,10 +2,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require (__DIR__.'php_mailer/Exception.php');
-require (__DIR__.'php_mailer/PHPMailer.php');
-require (__DIR__.'php_mailer/SMTP.php');
-$recipient_mail1 = "";
+require (__DIR__.'/php_mailer/Exception.php');
+require (__DIR__.'/php_mailer/PHPMailer.php');
+require (__DIR__.'/php_mailer/SMTP.php');
+$recipient_mail1 = "th@apimedia.ru";
 
 $mail = new PHPMailer;
 try {
@@ -28,25 +28,19 @@ catch (Exception $e) {
 
 
 
-$message = "<h1>Спецпотолок</h1>";
+$message = "<h1>APIMedia</h1>";
 if (isset($_POST['name'])) {
 	$message .= "Имя: ".$_POST['name']."<br />";
 }
 if (isset($_POST['phone'])) {
 	$message .= "Телефон: ".$_POST['phone']."<br />";
 }
-if (isset($_POST['email'])) {
-	$message .= "Город: ".$_POST['city']."<br />";
-}
-if (isset($_POST['comment'])) {
-	$message .= "Описание: ".$_POST['comment']."<br />";
+if (isset($_POST['messege'])) {
+	$message .= "Сообщение: ".$_POST['messege']."<br />";
 }
 
 if (isset($_POST['title'])) {
 	$message .= "Заголовок: ".$_POST['title']."<br />";
-}
-if (isset($_POST['subtitle'])) {
-	$message .= "Подзаголовок: ".$_POST['subtitle']."<br />";
 }
 
 
@@ -56,7 +50,7 @@ if (isset($_POST['subtitle'])) {
 
 // Письмо
 $mail->isHTML(true);
-$mail->Subject = 'Заявка с сайта Спецпотолок'; // Заголовок письма
+$mail->Subject = 'Заявка с сайта APIMedia'; // Заголовок письма
 $mail->Body = $message; // Текст письма
 $mail->CharSet = "utf-8";
 // Результат
