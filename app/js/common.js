@@ -30,6 +30,13 @@ $(document).ready(function () {
         }
     });
 
+    // для плавного перехода по якорям
+    $(".yakor").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top -80;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
 
     $(".js-callback").on( "click", function() {
         var newtitle = $(this).attr("data-title");
@@ -94,5 +101,5 @@ var certificatesSlider = new Swiper ('.certificates__swiper-container', {
     slideClass: 'certificates__swiper-slide',
     wrapperClass: 'certificates__swiper-wrapper',
     slidesPerView: 2,
-    spaceBetween: 32,
+    spaceBetween: 16,
 });

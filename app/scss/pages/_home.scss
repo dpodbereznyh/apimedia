@@ -783,7 +783,7 @@
 /*****Capability End*****/
 
 /*****Banner*****/
-.banner {
+.manager-section {
   background: $secondary_l4;
   padding: 70px 0;
   &__wrap {
@@ -974,67 +974,67 @@
   }
 }
 @include desktop {
-  .banner-even {
+  .manager-section-even {
     margin-bottom: 64px;
 
   }
 }
 @media screen and (max-width: 940.5px) {
-  .banner__wrap, .banner__wrap-odd {
+  .manager-section__wrap, .manager-section__wrap-odd {
     flex-direction: column;
   }
-  .banner__text {
+  .manager-section__text {
     text-align: center;
   }
-  .banner__text_wrap {
+  .manager-section__text_wrap {
     margin-bottom: 64px;
   }
-  .banner__image_wrap {
+  .manager-section__image_wrap {
     margin-left: 0;
     width: 100%;
   }
-  .banner__image-even {
+  .manager-section__image-even {
     margin: 0 auto 64px;
   }
   .banner__text-even {
     text-align: center;
   }
-  .banner__image-odd-wrap {
+  .manager-section__image-odd-wrap {
     margin: 0 auto 32px;
   }
-  .banner__text-odd {
+  .manager-section__text-odd {
     text-align: center;
     margin: 0 auto 64px;
   }
 }
 @media screen and (max-width: 454px) {
-  .banner__image, .banner__image-even {
+  .manager-section__image, .manager-section__image-even {
     width: 240px;
     height: 240px;
   }
-  .banner__image:before, .banner__image-even:before {
+  .manager-section__image:before, .manager-section__image-even:before {
     width: 300px;
     height: 300px;
   }
-  .banner__image:after, .banner__image-even:after {
+  .manager-section__image:after, .manager-section__image-even:after {
     width: 260px;
     height: 260px;
   }
-  .banner__image_circle {
+  .manager-section__image_circle {
     width: 30px;
     height: 30px;
     left: -17px;
   }
-  .banner__image_circle-even {
+  .manager-section__image_circle-even {
     width: 30px;
     height: 30px;
     right: 9%;
   }
-  .banner__image-odd {
+  .manager-section__image-odd {
     width: 240px;
     height: auto;
   }
-  .banner__image-odd-wrap {
+  .manager-section__image-odd-wrap {
     width: 290px;
     height: 290px;
   }
@@ -1043,7 +1043,7 @@
   .over-russia {
     bottom: -100px;
   }
-  .banner-odd {
+  .manager-section-odd {
     padding: 64px 0 100px;
   }
 }
@@ -1495,15 +1495,22 @@
   }
   &__swiper-wrapper {
     padding: 35px 0;
-    filter: drop-shadow(0 3px 9px rgba(175, 187, 204, .35));
-
+  }
+  &__swiper-slide-link {
+    display: block;
   }
   &__swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
     img {
       max-width: 100%;
       width: 100%;
       height: auto;
       display: block;
+      filter: drop-shadow(0 3px 9px rgba(175, 187, 204, .35));
+
     }
   }
   &__text_wrap {
@@ -1545,9 +1552,13 @@
   }
   &__item {
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__item_link {
-    width: 100%;
+    max-width: 220px;
+    max-height: 110px;
     display: block;
     img {
       max-width: 100%;
