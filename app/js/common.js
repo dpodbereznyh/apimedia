@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 70){
+            $('header').addClass("sticky");
+        }
+        else{
+            $('header').removeClass("sticky");
+        }
+    });
+
     $(function() {
         $('#main-menu').smartmenus({
             mainMenuSubOffsetX: -1,

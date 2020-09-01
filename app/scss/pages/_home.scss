@@ -20,21 +20,20 @@
 }
 
 /*****Header Nav*****/
+.sticky {
+  position: fixed;
+  width: 100%;
+  background: $light;
+  z-index: 555;
+  box-shadow: 0 0px 9px 2px rgba(0,0,0,.15);
+
+}
 .header {
+  width: 100%;
   padding-top: 32px;
   margin-bottom: 116px;
   >.container-fluid {
     position: relative;
-  }
-  &__circle {
-    width: 984px;
-    height: 984px;
-    border-radius: 50%;
-    border: 1px solid $secondary_l4;
-    position: absolute;
-    right: 25px;
-    top: -253px;
-    z-index: -1;
   }
   &__logo {
     margin-right: 32px;
@@ -264,6 +263,17 @@
 /*****Main Screen*****/
 .main-screen {
   margin-bottom: 46px;
+  position: relative;
+  &__circle {
+    width: 984px;
+    height: 984px;
+    border-radius: 50%;
+    border: 1px solid $secondary_l4;
+    position: absolute;
+    right: 61px;
+    top: -436px;
+    z-index: -1;
+  }
   &__image_wrap {
     width: 557px;
     height: 557px;
