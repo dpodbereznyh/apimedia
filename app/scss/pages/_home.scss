@@ -20,18 +20,13 @@
 }
 
 /*****Header Nav*****/
-.sticky {
-  position: fixed;
-  width: 100%;
-  background: $light;
-  z-index: 555;
-  box-shadow: 0 0px 9px 2px rgba(0,0,0,.15);
 
-}
 .header {
   width: 100%;
   padding-top: 32px;
-  margin-bottom: 116px;
+  transition: ease .5s all;
+  position: sticky;
+  top: 0;
   >.container-fluid {
     position: relative;
   }
@@ -75,8 +70,20 @@
     border-top: none!important;
   }
 }
+.sticky {
+  position: fixed;
+  width: 100%;
+  background: $light;
+  z-index: 555;
+  box-shadow: 0 0px 9px 2px rgba(0,0,0,.15);
+  padding-top: 0;
+  transition: ease .5s all;
+  padding: 15px 0;
+}
 .main-nav {
   display: block;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 .main-nav:after {
   clear: both;
@@ -243,25 +250,14 @@
     display: block;
   }
 }
-@include desktop {
-  .header {
-    margin-bottom: 32px;
-  }
-}
-@include laptop {
-  .header {
-    margin-bottom: 84px;
-  }
-}
-@include phones {
-  .header {
-    margin-bottom: 64px;
-  }
-}
+
+
+
 /*****Header Nav End*****/
 
 /*****Main Screen*****/
 .main-screen {
+  padding-top: 116px;
   margin-bottom: 46px;
   position: relative;
   &__circle {
@@ -400,7 +396,15 @@
     }
   }
 }
+@include desktop {
+  .main-screen {
+    padding-top: 32px;
+  }
+}
 @include laptop {
+  .main-screen {
+    padding-top: 84px;
+  }
   .main-screen__mouse {
     margin: 48px auto 0;
   }
@@ -437,6 +441,11 @@
   }
 
 }
+@include phones {
+  .main-screen {
+    padding-top: 64px;
+  }
+}
 @media screen and (max-width: 400.2px) {
   .main-screen__image_wrap {
     width: 300px;
@@ -459,6 +468,7 @@
 /*****About*****/
 
 .about {
+  padding-top: 70px;
   &__top {
     margin-bottom: 69px;
   }
@@ -1080,7 +1090,7 @@
 
 /*****Stages*****/
 .stages {
-  padding: 128px 0;
+  padding: 128px 0 58px;
   &__list_wrap {
     position: relative;
   }
@@ -1222,6 +1232,7 @@
 
 .price {
   margin-bottom: 138px;
+  padding-top: 70px;
   &__list {
     display: flex;
     align-items: flex-start;
@@ -1397,7 +1408,7 @@
 /*****Price End*****/
 /*****Advantages*****/
 .advantages {
-  padding-top: 52px;
+  padding-top: 70px;
   margin-bottom: 92px;
   position: relative;
   &__item_title {
@@ -1781,6 +1792,7 @@
 /*****Customers End*****/
 /*****Why-us*****/
 .why-us {
+  padding-top: 70px;
   margin-bottom: 128px;
   &__item {
     margin-bottom: 64px;
