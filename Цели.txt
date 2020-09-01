@@ -1,0 +1,7 @@
+Оставить заявку в header - открытие clickToHeaderPopup и отправка sendToHeaderPopup
+Нажатие на телефон - в шапке clickHeaderPhone, в футере clickContactsPhone
+"Написать нам" где цены - открытие clickWriteToUsPopup и отправка sendWriteToUsPopup
+Нажатие на почту clickContactsEmail
+Получить персональное предложение - отправка clickFooterFormBtn
+
+на формах прописан класс js-form-default

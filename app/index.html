@@ -13,16 +13,32 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../img/header/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/header/favicon-16x16.png">
     <link rel="shortcut icon" href="../img/header/favicon.ico">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">-->
     <link rel="stylesheet" href="css/main.min.css">
     <meta property="og:title" content="Digital агентство «API Media»">
     <meta property="og:description" content="Эффективные цифровые решения для вашего бизнеса: создание и продвижение сайтов, контекстная реклама, сквозная аналитика, социальные сети, дизайн. ">
     <meta property="og:image" content="assets/img/opengraph/og.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://apimedia.ru/">
+    <meta property="og:url" content="https://ppc.apimedia">
     <meta property="vk:image" content="assets/img/opengraph/vk_og.jpg">
 </head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+    ym(66898711, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/66898711" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <body>
+
 <main class="main">
     <header class="header">
         <div class="container-fluid">
@@ -33,7 +49,7 @@
                     <span class="main-menu-btn-icon"></span>
                 </label>
 
-                <a href="/" class="header__logo">
+                <a href="/" class="header__logo wow pulse" data-wow-iteration="1" data-wow-duration="0.5s">
                     <img src="../img/header/header-logo.svg" alt="APIMedia">
                 </a>
                 <!-- Sample menu definition -->
@@ -47,12 +63,12 @@
                         <div class="header__phone_icon">
                             <img src="../img/header/header-phon-icon.svg" alt="Контактный телефон">
                         </div>
-                        <a href="tel:+79005843700" class="h4 header__phone_text">
+                        <a href="tel:+79005843700" class="h4 header__phone_text js-onClickGoal" data-goal="clickHeaderPhone">
                             8 (900) 584-37-00
                         </a>
                     </li>
                     <li class="header__btn_wrap">
-                        <a href="#" data-src="#popup-form" data-fancybox class="header__btn btn p js-callback" data-title="Оставить заявку" data-input="Оставить заявку с шапки">
+                        <a href="#" data-src="#popup-form" data-fancybox class="header__btn btn p js-callback js-onClickGoal" data-send="sendToHeaderPopup" data-goal="clickToHeaderPopup" data-title="Оставить заявку" data-input="Оставить заявку с шапки" >
                             Оставить заявку
                         </a>
                     </li>
@@ -81,22 +97,22 @@
                             <div class="main-screen__about_time_icon">
                                 <img src="../img/main-screen/stopwatch-icon.svg" alt="stopwatch-icon">
                             </div>
-                            <p class="main-screen__about_time_text p">
+                            <p class="main-screen__about_time_text">
                                 Время прочтения  - 2 минуты
                             </p>
                         </div>
                         <div class="main-screen__about_circle"></div>
-                        <p class="main-screen__about_title hm">
+                        <p class="main-screen__about_title hm wow bounceInUp">
                             Здравствуйте,<br>
                             меня зовут Дмитрий
                         </p>
-                        <p class="main-screen__about_text hr">
+                        <p class="main-screen__about_text hr wow bounceInUp" data-wow-delay=".1s">
                             Именно со мной Вы будете разговаривать по телефону или переписываться по почте
                         </p>
-                        <p class="main-screen__about_text hr">
+                        <p class="main-screen__about_text hr wow bounceInUp" data-wow-delay=".2s">
                             Можно я проведу Вам небольшую экскурсию по нашему сайту?
                         </p>
-                        <p class="main-screen__about_text hr">
+                        <p class="main-screen__about_text hr wow bounceInUp" data-wow-delay=".3s">
                             Для начала, определимся, что же такое контекстная реклама и почему она так актуальна для любого бизнеса?
                         </p>
                     </div>
@@ -113,16 +129,16 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about__top">
-                        <p class="about__top_text hr">
+                        <p class="about__top_text hr wow bounceInLeft">
                             Каждый раз, когда кто-либо ищет товары или услуги в <span style="color: #FF0000">Я</span>ндекс и <span style="color: #4885ED">G</span><span style="color: #DB3236">o</span><span style="color: #F4C20D">o</span><span style="color: #4885ED">g</span><span style="color: #3CBA54">l</span><span style="color: #DB3236">e</span>, он встречается с контекстной рекламой
                         </p>
-                        <p class="about__top_text hr">
+                        <p class="about__top_text hr wow bounceInLeft" data-wow-delay=".1s">
                             Первые и последние четыре сайта в результатах поиска
                         </p>
-                        <p class="about__top_text hr">
+                        <p class="about__top_text hr wow bounceInLeft" data-wow-delay=".2s">
                             Владельцы сайтов платят поисковым системам за это. Цена варьируется в зависимости от ниши, но обычно это
                         </p>
-                        <p class="about__top_decoration_text about__bottom_text-small hm">
+                        <p class="about__top_decoration_text about__bottom_text-small hm wow bounceInLeft" data-wow-delay=".3s">
                             около <span class="hm">25-30</span> рублей
                         </p>
                     </div>
@@ -152,16 +168,16 @@
                     </div>
                 </div>
                 <div class="order-1 col-lg-6 order-lg-2">
-                    <p class="about__bottom_text hr">
+                    <p class="about__bottom_text hr wow bounceInRight">
                         А после того, как Вы что-то поискали, вас везде начинает преследовать соответствующие баннеры.
                     </p>
-                    <p class="about__bottom_text hr">
+                    <p class="about__bottom_text hr wow bounceInRight" data-wow-delay=".1s">
                         Замечали?
                     </p>
-                    <p class="about__bottom_text hr">
+                    <p class="about__bottom_text hr wow bounceInRight" data-wow-delay=".2s">
                         Это уже “Баннерная” реклама, тут цена одного посетителя значительно ниже
                     </p>
-                    <p class="about__bottom_text about__bottom_text-small hm">
+                    <p class="about__bottom_text about__bottom_text-small hm wow bounceInRight" data-wow-delay=".3s">
                         около <span>5-10</span> рублей
                     </p>
                 </div>
@@ -175,7 +191,7 @@
             </h2>
             <div class="capability__wrap">
                 <ul class="capability__list capability__list-top">
-                    <li class="capability__list_item capability__list_item-left hr">
+                    <li class="capability__list_item capability__list_item-left hr wow bounceInDown">
                         <p class="capability__list_item_text capability__list_item_text-left">
                             Выбирать <span class="hm">когда</span> показывать Ваш сайт (настройка расписания)
                         </p>
@@ -187,13 +203,13 @@
                         <div class="capability__list_item_icon capability__list_item_icon-right">
                             <img src="../img/capability/capability-icon.svg" alt="icon">
                         </div>
-                        <p class="capability__list_item_text capability__list_item_text-right">
+                        <p class="capability__list_item_text capability__list_item_text-right wow bounceInDown">
                             Получать клиентов в <span class="hm">ПЕРВЫЙ</span> день запуска
                         </p>
                     </li>
                 </ul>
                 <ul class="capability__list capability__list-bottom">
-                    <li class="capability__list_item capability__list_item-left hr">
+                    <li class="capability__list_item capability__list_item-left hr wow bounceInUp">
                         <p class="capability__list_item_text capability__list_item_text-left">
                             Рекламировать <span class="hm">ТЕМ, КТО БЫЛ НА<br>ВЕБ-САЙТЕ ВАШИХ КОНКУРЕНТОВ</span>
                         </p>
@@ -201,7 +217,7 @@
                             <img src="../img/capability/capability-icon.svg" alt="icon">
                         </div>
                     </li>
-                    <li class="capability__list_item capability__list_item-right hr">
+                    <li class="capability__list_item capability__list_item-right hr wow bounceInUp">
                         <div class="capability__list_item_icon capability__list_item_icon-right">
                             <img src="../img/capability/capability-icon.svg" alt="icon">
                         </div>
@@ -223,10 +239,10 @@
         <div class="container-fluid">
             <div class="manager-section__wrap">
                 <div class="manager-section__text_wrap">
-                    <p class="manager-section__text hr">
+                    <p class="manager-section__text hr wow fadeInLeft">
                         ОТЛИЧНО, ТЕПЕРЬ МЫ ЗНАЕМ, ЧТО ТАКОЕ КОНТЕКСТНАЯ РЕКЛАМА
                     </p>
-                    <p class="manager-section__text manager-section__text-accent hr" >
+                    <p class="manager-section__text manager-section__text-accent hr wow fadeInLeft" data-wow-delay=".3s">
                         САМОЕ ВРЕМЯ ПОЗНАКОМИТСЯ СО СХЕМОЙ НАШЕЙ РАБОТЫ И ЦЕНООБРАЗОВАНИЕМ
                     </p>
                 </div>
@@ -249,7 +265,7 @@
             <div class="stages__border"></div>
             <div class="container-fluid">
                 <ul class="stages__list">
-                    <li class="stages__item">
+                    <li class="stages__item wow fadeInUp" data-wow-duration=".3s">
                         <div class="stages__item_image_wrap">
                             <div class="stages__item_image">
                                 <img src="../img/stages/stage-icon-1.svg" alt="icon">
@@ -266,7 +282,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="stages__item">
+                    <li class="stages__item wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".2s">
                         <div class="stages__item_image_wrap">
                             <div class="stages__item_image">
                                 <img src="../img/stages/stage-icon-2.svg" alt="icon">
@@ -283,7 +299,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="stages__item">
+                    <li class="stages__item wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".4s">
                         <div class="stages__item_image_wrap">
                             <div class="stages__item_image">
                                 <img src="../img/stages/stage-icon-3.svg" alt="icon">
@@ -300,7 +316,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="stages__item">
+                    <li class="stages__item wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".6s">
                         <div class="stages__item_image_wrap">
                             <div class="stages__item_image">
                                 <img src="../img/stages/stage-icon-4.svg" alt="icon">
@@ -317,7 +333,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="stages__item">
+                    <li class="stages__item wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".8s">
                         <div class="stages__item_image_wrap">
                             <div class="stages__item_image">
                                 <img class="stages__item_image-rocet" src="../img/stages/stage-icon-5.svg" alt="icon">
@@ -342,7 +358,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
-                    <div class="price__item price__item_left">
+                    <div class="price__item price__item_left wow fadeInRight" data-wow-duration=".3s">
                         <p class="price__item_left_text hm">
                             ТАК СКОЛЬКО ЖЕ СТОИТ НАСТРОИТЬ И СОПРОВОЖДАТЬ<br>
                             ОДНУ РЕКЛАМНУЮ КАМПАНИЮ?
@@ -361,7 +377,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 offset-lg-1 col-lg-4">
-                    <div class="price__item price__item_midlle">
+                    <div class="price__item price__item_midlle wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".3s">
                         <div class="price__item_tuning">
                             <p class="price__item_tuning_title h1r">
                                 Настройка под ключ
@@ -378,13 +394,13 @@
                                 3900 ₽
                             </p>
                         </div>
-                        <a href="#" data-src="#popup-form" data-fancybox class="price__btn btn js-callback" data-title="Написать нам" data-input="Написать нам">
+                        <a href="#" data-src="#popup-form" data-fancybox class="price__btn btn js-callback js-onClickGoal" data-send="sendWriteToUsPopup" data-goal="clickWriteToUsPopup" data-title="Написать нам" data-input="Написать нам">
                             НАПИСАТЬ НАМ
                         </a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <div class="price__item price__item_right">
+                    <div class="price__item price__item_right wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".6s">
                         <div class="price__item_right_image">
                             <p class="price__item_right_text h4">
                                 1 МЕСЯЦ СОПРОВОЖДЕНИЯ В ПОДАРОК
@@ -395,7 +411,7 @@
                 </div>
 
             </div>
-            <p class="price__description p">
+            <p class="price__description p  wow fadeInUp" data-wow-duration=".3s">
                 * Цены указаны на стандартную рекламную кампанию, если Вы работаете по многим направлениям или у вас интернет-магазин, стоимость будет определяться  в индивидуальном порядке
             </p>
         </div>
@@ -412,10 +428,10 @@
                     </div>
                 </div>
                 <div class="manager-section__text_wrap">
-                    <p class="manager-section__text-even hr">
+                    <p class="manager-section__text-even hr wow fadeInDown" data-wow-duration=".3s">
                         С ЦЕНОЙ РАЗОБРАЛИСЬ
                     </p>
-                    <p class="manager-section__text-even hr" >
+                    <p class="manager-section__text-even hr wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".6s">
                         А СЕЙЧАС, САМОЕ ВРЕМЯ ДОКАЗАТЬ ВАМ, ЧТО <span class="manager-section__text-accent">МЫ ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА</span> И НАМ МОЖНО ДОВЕРИТЬ
                     </p>
                 </div>
@@ -426,32 +442,32 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="advantages__item advantages__item-orders">
+                    <div class="advantages__item advantages__item-orders wow fadeInLeft" data-wow-duration=".3s">
                         <div class="advantages__item_value h1m">
                             134 ₽
                         </div>
                     </div>
-                    <p class="advantages__item_title hr">
+                    <p class="advantages__item_title hr wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".3s">
                         Средняя стоимость<br>заявки
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <div class="advantages__item advantages__item-promo">
+                    <div class="advantages__item advantages__item-promo wow fadeInDown" data-wow-duration=".3s" data-wow-delay=".6s">
                         <div class="advantages__item_value h1m">
                             > 1000
                         </div>
                     </div>
-                    <p class="advantages__item_title hr">
+                    <p class="advantages__item_title hr wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".9s">
                         Рекламных кампаний<br>настроено
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <div class="advantages__item advantages__item-clients">
+                    <div class="advantages__item advantages__item-clients wow fadeInRight" data-wow-duration=".3s" data-wow-delay="1.2s">
                         <div class="advantages__item_value h1m">
                             96%
                         </div>
                     </div>
-                    <p class="advantages__item_title advantages__item_title-last hr">
+                    <p class="advantages__item_title advantages__item_title-last hr wow fadeInUp" data-wow-duration=".3s" data-wow-delay="1.5s">
                         Клиентов остаются<br>довольны нашей работой
                     </p>
                 </div>
@@ -468,36 +484,45 @@
             </div>
             <div class="row">
                 <div class="offset-sm-2 col-sm-8 offset-md-0 col-md-6">
-                    <div class="swiper-container certificates__swiper-container">
-                        <div class="swiper-wrapper certificates__swiper-wrapper">
-                            <div class="swiper-slide certificates__swiper-slide">
-                                <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-1.jpg" data-fancybox>
-                                    <img src="../img/certificates/certificates-1.jpg" alt="Сертификат">
-                                </a>
+                    <div class="certificates__slider">
+                        <div class="swiper-container certificates__swiper-container">
+                            <div class="swiper-wrapper certificates__swiper-wrapper">
+                                <div class="swiper-slide certificates__swiper-slide">
+                                    <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-1.jpg" data-fancybox="certificates">
+                                        <img src="../img/certificates/certificates-1.jpg" alt="Сертификат">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide certificates__swiper-slide">
+                                    <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-2.jpg" data-fancybox="certificates">
+                                        <img src="../img/certificates/certificates-2.jpg" alt="Сертификат">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide certificates__swiper-slide">
+                                    <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-3.jpg" data-fancybox="certificates">
+                                        <img src="../img/certificates/certificates-3.jpg" alt="Сертификат">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide certificates__swiper-slide">
+                                    <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-4.jpg" data-fancybox="certificates">
+                                        <img src="../img/certificates/certificates-4.jpg" alt="Сертификат">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="swiper-slide certificates__swiper-slide">
-                                <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-2.jpg" data-fancybox>
-                                    <img src="../img/certificates/certificates-2.jpg" alt="Сертификат">
-                                </a>
-                            </div>
-                            <div class="swiper-slide certificates__swiper-slide">
-                                <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-3.jpg" data-fancybox>
-                                    <img src="../img/certificates/certificates-3.jpg" alt="Сертификат">
-                                </a>
-                            </div>
-                            <div class="swiper-slide certificates__swiper-slide">
-                                <a class="certificates__swiper-slide-link" href="../img/certificates/certificates-4.jpg" data-fancybox>
-                                    <img src="../img/certificates/certificates-4.jpg" alt="Сертификат">
-                                </a>
-                            </div>
+                        </div>
+                        <div class="swiper-button-prev certificates__slider_button-prev certificates__slider_button">
+                            <span class="icon-arrow-prev"></span>
+                        </div>
+                        <div class="swiper-button-next certificates__slider_button-next certificates__slider_button">
+                            <span class="icon-arrow-next"></span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="certificates__text_wrap">
+                    <div class="certificates__text_wrap wow pulse" data-wow-iteration="5" data-wow-duration="0.25s">
                         <p class="certificates__text hm">
                             У НАС ЕСТЬ <span class="accent">СЕРТИФИКАТЫ</span>. МЫ ПРОШЛИ ТЕСТИРОВАНИЕ И ПОДТВЕРДИЛИ СВОЮ КОМПЕТЕНТНОСТЬ
-                    </p></div>
+                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -516,66 +541,66 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-6 col-sm-4">
-                                <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                <div class="customers-list__item wow pulse" data-wow-iteration="1" data-wow-duration="0.25s">
+                                    <div class="customers-list__item_link">
                                         <img src="../img/customers/cfs.png" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".1s">
                                         <img src="../img/customers/zid.svg" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".2s">
                                         <img src="../img/customers/profilogistik.png" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".3s">
                                         <img src="../img/customers/logotip.gif" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".4s">
                                         <img src="../img/customers/02-mercedes-benz.png" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".5s">
                                         <img src="../img/customers/arm.jpg" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".6s">
                                         <img src="../img/customers/mir-dereva.svg" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".7s">
                                         <img src="../img/customers/dolgorukiy.svg" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-4">
                                 <div class="customers-list__item">
-                                    <a href="#" class="customers-list__item_link">
+                                    <div class="customers-list__item_link wow pulse" data-wow-iteration="1" data-wow-duration="0.25s" data-wow-delay=".8s">
                                         <img src="../img/customers/proton.svg" alt="Логотип">
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -613,14 +638,14 @@
                                                 201 ₽
                                             </p>
                                         </div>
-                                        <a href="#" class="customers__slide_link strong">
+                                        <a href="https://promo.zid.ru/" target="_blank" class="customers__slide_link strong">
                                             promo.zid.ru
                                         </a>
                                     </div>
                                     <div class="col-xl-8">
-                                        <div class="customers__slide_image">
+                                        <a href="../img/customers-slider/zid.jpg" data-fancybox class="customers__slide_image">
                                             <img src="../img/customers-slider/zid.jpg" alt="Слайд">
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -630,30 +655,30 @@
                                 <div class="row">
                                     <div class="col-xl-4">
                                         <p class="customers__slide_title h2m">
-                                            Продвижение мотобуксировщиков в осенний и зимний сезон для завода имени В. А. Дегтярева
+                                            Продвижение салона цветов в Москве и регионах (ЦФО).
                                         </p>
                                         <p class="customers__slide_description h2r">
-                                            Была выполнена разработка лендинга, настройка контекстной рекламы в Яндекс и Google (поисковая и баннерная реклама) на всю Россию
+                                            Была выполнена разработка интернет-магазина цветов и настроены рекламные кампании в Яндекс.Директ и Google.Ads отдельно в разных регионах. За первые два месяца было принято более 2900 заказов.
                                         </p>
                                         <div class="customers__slide_statistic">
                                             <p class="customers__slide_statistic_title h2m accent">
                                                 Показатели:
                                             </p>
                                             <p class="customers__slide_statistic_item h2m accent">
-                                                средняя стоимость заявки –
+                                                стоимость заказа –
                                             </p>
                                             <p class="customers__slide_statistic_price h2m">
-                                                201 ₽
+                                                120 ₽
                                             </p>
                                         </div>
-                                        <a href="#" class="customers__slide_link strong">
-                                            promo.zid.ru
+                                        <a href="https://cvetycenaodna.ru/" target="_blank" class="customers__slide_link strong">
+                                            cvetycenaodna.ru
                                         </a>
                                     </div>
                                     <div class="col-xl-8">
-                                        <div class="customers__slide_image">
-                                            <img src="../img/customers-slider/zid.jpg" alt="Слайд">
-                                        </div>
+                                        <a href="../img/customers-slider/flowers.jpg" data-fancybox class="customers__slide_image">
+                                            <img src="../img/customers-slider/flowers.jpg" alt="Слайд">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -663,30 +688,129 @@
                                 <div class="row">
                                     <div class="col-xl-4">
                                         <p class="customers__slide_title h2m">
-                                            Продвижение мотобуксировщиков в осенний и зимний сезон для завода имени В. А. Дегтярева
+                                            Продвижение сайта Партнера Яндекс.Такси.
                                         </p>
                                         <p class="customers__slide_description h2r">
-                                            Была выполнена разработка лендинга, настройка контекстной рекламы в Яндекс и Google (поисковая и баннерная реклама) на всю Россию
+                                            Разработан одностраничный сайт с привлечением потенциальных водителей для работы в Яндекс.Такси. Настроена контекстная реклама в Яндекс и Google в ЦФО. В первый месяц рекламы было собрано более 150 заявок от водителей и подключено более 100.
                                         </p>
                                         <div class="customers__slide_statistic">
                                             <p class="customers__slide_statistic_title h2m accent">
                                                 Показатели:
                                             </p>
                                             <p class="customers__slide_statistic_item h2m accent">
-                                                средняя стоимость заявки –
+                                                стоимость заявки –
                                             </p>
                                             <p class="customers__slide_statistic_price h2m">
-                                                201 ₽
+                                                80 ₽
                                             </p>
                                         </div>
-                                        <a href="#" class="customers__slide_link strong">
-                                            promo.zid.ru
+                                        <a href="https://taxi-verag.ru/" target="_blank" class="customers__slide_link strong">
+                                            taxi-verag.ru
                                         </a>
                                     </div>
                                     <div class="col-xl-8">
-                                        <div class="customers__slide_image">
-                                            <img src="../img/customers-slider/zid.jpg" alt="Слайд">
+                                        <a href="../img/customers-slider/ya-taxi.jpg"  data-fancybox class="customers__slide_image">
+                                            <img src="../img/customers-slider/ya-taxi.jpg" alt="Слайд">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customers__swiper-slide">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <p class="customers__slide_title h2m">
+                                            Продвижение сайта компании «Геометрия»
+                                        </p>
+                                        <p class="customers__slide_description h2r">
+                                            Было выполнено создание нового корпоративного сайта для компании «Геометрия» по услугам остекления, рольставням, жалюзи. Настроена контекстная реклама в поисковых системах Яндекс и Google в г. Владимир. В весенний и летний период было более 800 обращений в компанию по рекламному трафику.
+                                        </p>
+                                        <div class="customers__slide_statistic">
+                                            <p class="customers__slide_statistic_title h2m accent">
+                                                Показатели:
+                                            </p>
+                                            <p class="customers__slide_statistic_item h2m accent">
+                                                стоимость заявки –
+                                            </p>
+                                            <p class="customers__slide_statistic_price h2m">
+                                                200 ₽
+                                            </p>
                                         </div>
+                                        <a href="https://geo33.ru/" target="_blank" class="customers__slide_link strong">
+                                            geo33.ru
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <a href="../img/customers-slider/geo33.jpg"  data-fancybox class="customers__slide_image">
+                                            <img src="../img/customers-slider/geo33.jpg" alt="Слайд">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customers__swiper-slide">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <p class="customers__slide_title h2m">
+                                            Продвижение сайта Альянс-Инвест.
+                                        </p>
+                                        <p class="customers__slide_description h2r">
+                                            Был создан корпоративный сайт по проектированию металлических конструкций для компании Альянс-Инвест. Настроили и запустили контекстную рекламу в Яндексе и Google. За первый месяц рекламного продвижения было собрано более 20 обращений и подписано 12 договоров на проектирование. Сумма одного чека более 50 000 руб.
+                                        </p>
+                                        <div class="customers__slide_statistic">
+                                            <p class="customers__slide_statistic_title h2m accent">
+                                                Показатели:
+                                            </p>
+                                            <p class="customers__slide_statistic_item h2m accent">
+                                                стоимость заявки –
+                                            </p>
+                                            <p class="customers__slide_statistic_price h2m">
+                                                300 ₽
+                                            </p>
+                                        </div>
+                                        <a href="https://alliance-projects.ru/" target="_blank" class="customers__slide_link strong">
+                                            alliance-projects.ru
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <a href="../img/customers-slider/alliance.jpg" data-fancybox class="customers__slide_image">
+                                            <img src="../img/customers-slider/alliance.jpg" alt="Слайд">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customers__swiper-slide">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <p class="customers__slide_title h2m">
+                                            Продвижение сайта компании «TERRASOFF».
+                                        </p>
+                                        <p class="customers__slide_description h2r">
+                                            Был разработан интернет-магазин для продажи террасных досок и комплектующих. Произведена настройка рекламных кампаний в Яндекс.Директ на Владимирскую область. За первые 3 месяца продвижения было более 100 покупателей только по одному Яндексу и это в небольшой области!
+                                        </p>
+                                        <div class="customers__slide_statistic">
+                                            <p class="customers__slide_statistic_title h2m accent">
+                                                Показатели:
+                                            </p>
+                                            <p class="customers__slide_statistic_item h2m accent">
+                                                стоимость заявки –
+                                            </p>
+                                            <p class="customers__slide_statistic_price h2m">
+                                                150 ₽
+                                            </p>
+                                        </div>
+                                        <a href="https://terasoff.ru/" target="_blank" class="customers__slide_link strong">
+                                            terasoff.ru
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <a href="../img/customers-slider/терасофф 1.jpg" data-fancybox class="customers__slide_image">
+                                            <img src="../img/customers-slider/терасофф 1.jpg" alt="Слайд">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -710,11 +834,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="why-us__text_wrap">
+                        <div class="why-us__text_wrap wow fadeInLeft" data-wow-duration="0.3s">
                             <p class="why-us__text h1r">
                                 За месяц, мы анализируем около 45 рекламных кампаний, и в среднем, снижаем стоимость заявки на 27%. Что это значит?
                             </p>
-                            <p class="why-us__text-accent h1m">Мы компетентнее большинства наших конкурентов</p>
+                            <p class="why-us__text-accent h1m wow pulse" data-wow-delay=".2s" data-wow-iteration="3" data-wow-duration="0.4s">Мы компетентнее большинства наших конкурентов</p>
 
                         </div>
                     </div>
@@ -745,11 +869,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="why-us__text_wrap why-us__text_wrap-middle">
+                        <div class="why-us__text_wrap why-us__text_wrap-middle wow fadeInRight" data-wow-duration="0.3s">
                             <p class="why-us__text why-us__text-middle h1r">
                                 Мы не успели зажраться. У нас адекватные цены, а своих клиентов мы любим больше всего, ценим каждого!
                             </p>
-                            <p class="why-us__text why-us__text-middle h1m">
+                            <p class="why-us__text why-us__text-middle h1m wow pulse" data-wow-delay=".2s" data-wow-iteration="3" data-wow-duration="0.4s">
                                 Для нас, клиент - партнер, с которым мы хотим выстроить долгосрочные отношения
                             </p>
                         </div>
@@ -761,7 +885,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="why-us__text_wrap">
+                        <div class="why-us__text_wrap wow fadeInLeft" data-wow-duration="0.3s">
                             <p class="why-us__text h1r">
                             Мы умеем не только настраивать контекстную рекламу, но и проводить аудиты, рисовать сочные и привлекательные <span class="h1m">баннеры</span>, создавать <span class="h1m">новые сайты</span>, вносить исправления в существующие
                             </p>
@@ -786,35 +910,35 @@
         </h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <div class="team__item_image">
+                    <div class="team__item_image wow pulse" data-wow-iteration="1" data-wow-duration="0.4s">
                         <img src="../img/team/derectolog.jpg" alt="Директолог">
                     </div>
-                    <p class="team__item_title p">
+                    <p class="team__item_title p wow fadeInUp">
                         Банделюк Артем,
                     </p>
-                    <p class="team__item_description">
+                    <p class="team__item_description wow fadeInUp" data-wow-delay="0.3s">
                         сертифицированный директолог
                     </p>
                 </li>
                 <li class="team__item">
-                    <div class="team__item_image">
+                    <div class="team__item_image wow pulse" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-duration="0.4s">
                         <img src="../img/team/designer.jpg" alt="Дизайнер">
                     </div>
-                    <p class="team__item_title p">
+                    <p class="team__item_title p wow fadeInUp">
                         Нестерова Ирина,
                     </p>
-                    <p class="team__item_description">
+                    <p class="team__item_description wow fadeInUp" data-wow-delay="0.4s">
                         дизайнер
                     </p>
                 </li>
                 <li class="team__item">
-                    <div class="team__item_image">
+                    <div class="team__item_image wow pulse" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-duration="0.4s">
                         <img src="../img/team/manager.jpg" alt="Менеджер">
                     </div>
-                    <p class="team__item_title p">
+                    <p class="team__item_title p wow fadeInUp">
                         Иголкин Дмитрий,
                     </p>
-                    <p class="team__item_description">
+                    <p class="team__item_description wow fadeInUp" data-wow-delay="0.5s">
                         клиентский менеджер
                     </p>
                 </li>
@@ -835,19 +959,19 @@
                         НУ ВОТ И ВСЕ, БУДЕМ НАДЕЕТСЯ, ЧТО ВАМ У НАС ПОНРАВИЛОСЬ И ВЫ СТАНЕТЕ НАШИМ КЛИЕНТОМ. ВОТ НАШИ КОНТАКТЫ, ЗВОНИТЕ И ПИШИТЕ (РАБОТАЕМ ПО ВСЕЙ РОССИИ)
                     </p>
                     <ul class="contacts__list">
-                        <li class="contacts_item">
+                        <li class="contacts_item wow pulse" data-wow-iteration="1" data-wow-duration="0.4s">
                             <div class="contacts__item_icon">
                                 <img src="../img/contacts/cont-phone-icon.svg" alt="Телефон">
                             </div>
-                            <a href="tel:+79005843700" class="contacts__item_link h3">+7 (900) 584-37-00</a>
+                            <a href="tel:+79005843700" class="contacts__item_link h3 js-onClickGoal" data-goal="clickContactsPhone">+7 (900) 584-37-00</a>
                         </li>
-                        <li class="contacts_item">
+                        <li class="contacts_item wow pulse" data-wow-delay=".4s" data-wow-iteration="1" data-wow-duration="0.4s">
                             <div class="contacts__item_icon">
                                 <img src="../img/contacts/cont-envelope-icon.svg" alt="Электронный адрес">
                             </div>
-                            <a href="mailto:id@apimedia.ru" class="contacts__item_link h3">id@apimedia.ru</a>
+                            <a href="mailto:id@apimedia.ru" class="contacts__item_link h3 js-onClickGoal" data-goal="clickContactsEmail">id@apimedia.ru</a>
                         </li>
-                        <li class="contacts_item">
+                        <li class="contacts_item wow pulse" data-wow-delay=".8s" data-wow-iteration="1" data-wow-duration="0.4s">
                             <div class="contacts__item_icon">
                                 <img src="../img/contacts/cont-location-icon.svg" alt="Адрес">
                             </div>
@@ -855,7 +979,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="over-russia">
+                <div class="over-russia wow pulse" data-wow-delay="1.6s" data-wow-iteration="5" data-wow-duration="0.15s">
                     <img src="../img/contacts/over-russia.svg" alt="Работаем по всей России">
                 </div>
             </div>
@@ -867,7 +991,7 @@
         <h3 class="footer__title h3">
             Получить персональное предложение
         </h3>
-        <form class="footer__form">
+        <form class="footer__form js-form-default">
             <input class="footer__form_input" type="hidden" value="Получить персональное предложение" name="title">
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
@@ -880,7 +1004,7 @@
                     <input class="footer__form_input p" type="text" placeholder="Сообщение" name="messege">
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <input class="footer__form_input p footer__form_btn" type="submit">
+                    <input class="footer__form_input p footer__form_btn js-validate-form js-onClickGoal" data-goal="clickFooterFormBtn" type="submit">
                 </div>
             </div>
             <label class="footer__form_label">
@@ -893,14 +1017,14 @@
         </form>
     </div>
     <div class="d-none">
-        <form id="popup-form">
+        <form id="popup-form" class="js-form-default">
             <div class="popup-form">
                 <p class="popup-form-title js-title hm"></p>
                 <input class="popup-form-input js-zakaz" type="hidden" value="" name="title">
                 <input class="popup-form-input" type="text" placeholder="Ваше имя" name="name">
                 <input class="popup-form-input" type="tel" placeholder="Ваш телефон" name="phone" required>
                 <div class="d-flex justify-content-center mt-4">
-                    <button type="submit" class="popup-form__btn btn">Отправить</button>
+                    <button type="submit" class="popup-form__btn btn js-validate-form js-onClickGoal">Отправить</button>
                 </div>
                 <label class="footer__form_label">
                     <input type="checkbox" class="footer__form_checkbox" checked required>
@@ -916,11 +1040,16 @@
         </div>
     </div>
 </footer>
-
-
-
+<script>
+    (function(w,d,u){
+        var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+    })(window,document,'https://cdn-ru.bitrix24.ru/b3524335/crm/site_button/loader_2_4mrzdg.js');
+</script>
+<script src="js/vendors/wow.js"></script>
 
 <script src="js/scripts.min.js"></script>
+
 </body>
 </html>
 
