@@ -5,7 +5,6 @@ use PHPMailer\PHPMailer\Exception;
 require (__DIR__.'/php_mailer/Exception.php');
 require (__DIR__.'/php_mailer/PHPMailer.php');
 require (__DIR__.'/php_mailer/SMTP.php');
-$recipient_mail1 = "th@apimedia.ru";
 
 $mail = new PHPMailer;
 try {

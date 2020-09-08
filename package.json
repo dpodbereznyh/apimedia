@@ -20,5 +20,10 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "browsersync": "0.0.1-security",
+    "concat": "^1.0.3",
+    "uglify": "^0.1.5"
   }
 }

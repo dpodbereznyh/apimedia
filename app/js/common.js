@@ -40,14 +40,27 @@ $(document).ready(function () {
         }
     });
 
+    //Close menu
+    $(window).ready(closeMenu);
+    $(window).resize(closeMenu);
+    function closeMenu()
+    {
+        if ( $(window).width() < 1100 ) {
+            $(".yakor").on("click", function (event) {
+                setTimeout(function(){
+                    $("#main-menu-state").prop('checked', false).change();
+                }, 300);
+            });
+        }
+    }
+
     // для плавного перехода по якорям
     $(".yakor").on("click", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
-            top = $(id).offset().top -80;
+            top = $(id).offset().top -160;
         $('body,html').animate({scrollTop: top}, 500);
     });
-
 
     $(".js-callback").on( "click", function() {
         var newtitle = $(this).attr("data-title");
