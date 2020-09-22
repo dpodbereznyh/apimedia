@@ -627,6 +627,12 @@
     right: 29%;
   }
 }
+@include desktop {
+  .about {
+    padding-top: 32px;
+    margin-bottom: 32px;
+  }
+}
 @include laptop {
   .about__top_text, .about__bottom_text, .about__top_decoration_text  {
     text-align: center;
@@ -815,7 +821,7 @@
 /*****Banner*****/
 .manager-section {
   background: $secondary_l4;
-  padding: 70px 0;
+  padding: 70px 0 0;
   &__wrap {
     display: flex;
     align-items: center;
@@ -838,6 +844,7 @@
     position: relative;
     width: 38%;
     margin-left: 70px;
+    margin-bottom: 70px;
   }
   &__image {
     width: 323px;
@@ -1035,6 +1042,12 @@
   .manager-section__text-odd {
     text-align: center;
     margin: 0 auto 64px;
+  }
+}
+@include laptop {
+  .manager-section-even {
+    padding: 70px 0 32px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (max-width: 454px) {
@@ -1363,6 +1376,9 @@
   }
 }
 @include laptop {
+  .price {
+    padding-top: 0;
+  }
   .price__item_right {
     margin: 64px 0;
   }
@@ -1451,6 +1467,11 @@
     background: linear-gradient(180deg, #B8CCFF 19.79%, #9150E4 100%);
     opacity: 0.85;
     box-shadow: 0px 25px 35px rgba(68, 31, 216, 0.35);
+  }
+}
+@include laptop {
+  .advantages {
+    margin-bottom: 64px;
   }
 }
 @include tablet {
@@ -1892,12 +1913,20 @@
     right: 0;
   }
 }
+@include desktop {
+  .why-us {
+    margin-bottom: 64px;
+  }
+}
 @include laptop {
   .why-us__text-accent {
     margin-bottom: 32px;
   }
   .why-us__text, .why-us__text-accent {
     text-align: center;
+  }
+  .why-us {
+    padding-top: 0;
   }
 }
 @include tablet {
