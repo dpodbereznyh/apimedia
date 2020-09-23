@@ -391,6 +391,27 @@
   .main-screen {
     padding-top: 32px;
   }
+  .main-screen__image_wrap {
+    width: 505px;
+    height: 505px;
+  }
+  .main-screen__image_bg {
+    width: 100%;
+    height: auto;
+  }
+  .main-screen__image_manager {
+    width: 505px;
+    height: 505px;
+  }
+  .main-screen__image_circle_top {
+    width: 135px;
+    height: 135px;
+    top: -13px;
+  }
+  .main-screen__image_wrap:after {
+    width: 559px;
+    height: 559px;
+  }
 }
 @include laptop {
   .main-screen {
@@ -398,9 +419,6 @@
   }
   .main-screen__mouse {
     margin: 48px auto 0;
-  }
-  .main-screen__image_wrap:after {
-    display: none;
   }
   .main-screen__image_wrap {
     margin: 0 auto 32px;
@@ -418,10 +436,6 @@
     width: 400px;
     height: 400px;
   }
-  .main-screen__image_bg {
-    width: 100%;
-    height: auto;
-  }
   .main-screen__image_manager {
     width: 400px;
     height: 400px;
@@ -430,7 +444,10 @@
     top: -38px;
     right: 0;
   }
-
+  .main-screen__image_wrap:after {
+    width: 449px;
+    height: 449px;
+  }
 }
 @include phones {
   .main-screen {
@@ -441,6 +458,9 @@
   .main-screen__image_wrap {
     width: 300px;
     height: 300px;
+  }
+  .main-screen__image_wrap:after {
+    display: none;
   }
   .main-screen__image_bg {
     width: 100%;
