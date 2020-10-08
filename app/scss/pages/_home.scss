@@ -348,13 +348,18 @@
   }
   &__about_title {
     margin-bottom: 32px;
-    margin-top: 109px;
+    margin-top: 32px;
   }
   &__about_text {
     margin-bottom: 16px;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  &__about_text-red {
+    color: #ff3e3e;
+    margin-top: 109px;
+    margin-bottom: 0;
   }
   &__about_circle {
     position: absolute;
@@ -412,6 +417,9 @@
     width: 559px;
     height: 559px;
   }
+  .main-screen__about_text-red {
+    margin-top: 64px;
+  }
 }
 @include laptop {
   .main-screen {
@@ -424,12 +432,13 @@
     margin: 0 auto 32px;
   }
   .main-screen__about_title {
-    margin-top: 64px;
+    margin-top: 32px;
   }
   .main-screen__image_circle_top {
     width: 70px;
     height:70px;
   }
+  
 }
 @media screen and (max-width: 562.2px) {
   .main-screen__image_wrap {
@@ -453,6 +462,18 @@
   .main-screen {
     padding-top: 64px;
   }
+  .main-screen__image_wrap {
+    width: 405px;
+    height: 405px;
+  }
+  .main-screen__image_manager {
+    width: 350px;
+    height: 350px;
+  }
+  .main-screen__image_wrap:after {
+    width: 400px;
+    height: 400px;
+  }
 }
 @media screen and (max-width: 400.2px) {
   .main-screen__image_wrap {
@@ -467,8 +488,8 @@
     height: auto;
   }
   .main-screen__image_manager {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
   .main-screen__about_circle {
     display: none;
@@ -817,7 +838,8 @@
   .capability__image_wrap {
     display: none;
   }
-}@media screen and (max-width: 827.5px ) {
+}
+@media screen and (max-width: 827.5px ) {
   .capability__title {
     margin-bottom: 32px;
   }
@@ -1044,11 +1066,12 @@
     text-align: center;
   }
   .manager-section__text_wrap {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
   }
   .manager-section__image_wrap {
     margin-left: 0;
     width: 100%;
+    margin-bottom: 16px;
   }
   .manager-section__image-even {
     margin: 0 auto 64px;
@@ -1062,6 +1085,9 @@
   .manager-section__text-odd {
     text-align: center;
     margin: 0 auto 64px;
+  }
+  .manager-section {
+    padding: 70px 0 64px;
   }
 }
 @include laptop {
