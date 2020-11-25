@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
+       
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 90){
+        if ($(this).scrollTop() > 32){
             $('header').addClass("sticky");
         }
         else{

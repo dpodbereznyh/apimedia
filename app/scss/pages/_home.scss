@@ -22,10 +22,13 @@
 /*****Header Nav*****/
 
 .header {
+  transition: 0.3s ;
+  // position: fixed;
   width: 100%;
   padding-top: 32px;
-  transition: ease .5s all;
+  padding-bottom: 15px;
   position: sticky;
+  background: $light;
   top: 0;
   >.container-fluid {
     position: relative;
@@ -71,14 +74,14 @@
   }
 }
 .sticky {
-  position: fixed;
   width: 100%;
   background: $light;
   z-index: 555;
   box-shadow: 0 0px 9px 2px rgba(0,0,0,.15);
-  padding-top: 0;
-  transition: ease .5s;
-  padding: 15px 0;
+  padding-top: 32px;
+  padding-bottom: 15px;
+  transition: .3s;
+  
 }
 .main-nav {
   display: block;
@@ -248,7 +251,7 @@
 
 /*****Black Friday*****/
 .black-friday {
-  padding-top: 116px;
+  padding-top: 32px;
   padding-bottom: 46px;
   position: relative;
   &__circle-1 {
@@ -260,14 +263,14 @@
     z-index: 1;
     top: 0;
     left: 50%;
-    transform: translate(6px,42px);
+    transform: translate(6px, 0);
     box-shadow: 0px 35px 35px rgba(140, 182, 231, 0.55);
   }
   &__circle-2 {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(214px, 180px);
+    transform: translate(214px, 63px);
     width: 69px;
     height: 69px;
     background: linear-gradient(180deg, #B9F2FF 0%, #FCBFD5 100%);
@@ -283,7 +286,7 @@
     height: 109px;
     background: linear-gradient(180deg, #BCFAFA 0%, #767BEE 100%);
     box-shadow: 0px 35px 35px rgba(140, 182, 231, 0.55);
-    transform: rotate(-87.26deg) translate(180px, -113px);
+    transform: rotate(-87.26deg) translate(120px, -113px);
     border-radius: 50%;
     z-index: 1;
   }
@@ -291,7 +294,7 @@
     position: absolute;
     bottom: 0;
     right: 50%;
-    transform: translate(232px,-120px);
+    transform: translate(232px,-80px);
     width: 59px;
     height: 59px;
     background: linear-gradient(180deg, #B8CCFF 19.79%, #9150E4 100%);
@@ -302,32 +305,32 @@
   &__wrap {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: $secondary_l2 url(../img/black-friday/black-frider-bg.png)no-repeat center center/cover;
-    padding: 45px 0 30px 60px;
+    padding: 32px 0 30px 60px;
   }
   &__title {
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 45px;
-    line-height: 53px;
+    line-height: 51px;
     color: #000;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     max-width: 544px;
   }
   &__offer {
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
-    line-height: 107px;
+    font-size: 80px;
+    line-height: 80px;
     color: #FF3E3E;
   }
   &__stoke {
     width: fit-content;
-    padding: 32px;
+    padding: 16px;
     background: $secondary_d4;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     &:before {
       content: "";
       display: block;
@@ -410,12 +413,12 @@
     display: none;
   }
   .black-friday__circle-2 {
-    top: 160px;
+    top: 110px;
     left: 400px;
     transform: translate(0,180px);
   }
   .black-friday__circle-3 {
-    bottom: 250px;
+    bottom: 160px;
     right: unset;
     left: 80%;
     transform: translate(0, 0);
@@ -425,7 +428,7 @@
     bottom: unset;
     right: unset;
     left: 145px;
-    top: 534px;
+    top: 486px;
     transform: translate(0, 0);
   }
 }
@@ -433,13 +436,13 @@
   .black-friday__circle-2 {
     width: 43px;
     height: 43px;
-    top: 172px;
+    top: 122px;
     left: 416px;
   }
   .black-friday__circle-3 {
     width: 66px;
     height: 66px;
-    bottom: 242px;
+    bottom: 192px;
     left: 79%;
 
   }
@@ -447,7 +450,7 @@
     width: 23px;
     height: 23px;
     left: 145px;
-    top: 549px;
+    top: 499px;
   }
 }
 @media screen and (max-width: 605.5px) {
@@ -481,12 +484,12 @@
     transform: translate(54px,50px);
   }
   .black-friday__circle-2 {
-    top: 78px;
+    top: 63px;
     left: 290px;
   }
   .black-friday__circle-4 {
     left: 105px;
-    top: 402px;
+    top: 385px;
   }
 }
 @media screen and (max-width: 387.5px) {
@@ -515,16 +518,16 @@
     line-height: 17px;
   }
   .black-friday__circle-2 {
-      top: 0px;
+      top: -15px;
       left: 190px;
   }
   .black-friday__circle-4 {
     left: 90px;
-    top: 276px;
+    top: 260px;
   }
   .black-friday__circle-3 {
     left: 70%;
-    bottom: 266px;
+    bottom: 221px;
   }
 }
 
