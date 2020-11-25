@@ -246,6 +246,290 @@
 
 /*****Header Nav End*****/
 
+/*****Black Friday*****/
+.black-friday {
+  padding-top: 116px;
+  padding-bottom: 46px;
+  position: relative;
+  &__circle-1 {
+    position: absolute;
+    background: linear-gradient(180deg, #BCFAFA 0%, #767BEE 100%);
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translate(6px,42px);
+    box-shadow: 0px 35px 35px rgba(140, 182, 231, 0.55);
+  }
+  &__circle-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(214px, 180px);
+    width: 69px;
+    height: 69px;
+    background: linear-gradient(180deg, #B9F2FF 0%, #FCBFD5 100%);
+    box-shadow: 0px 35px 35px rgba(250, 161, 193, 0.35);
+    border-radius: 74px;
+    z-index: 1;
+  }
+  &__circle-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 109px;
+    height: 109px;
+    background: linear-gradient(180deg, #BCFAFA 0%, #767BEE 100%);
+    box-shadow: 0px 35px 35px rgba(140, 182, 231, 0.55);
+    transform: rotate(-87.26deg) translate(180px, -113px);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  &__circle-4 {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(232px,-120px);
+    width: 59px;
+    height: 59px;
+    background: linear-gradient(180deg, #B8CCFF 19.79%, #9150E4 100%);
+    box-shadow: 0px 25px 35px rgba(68, 31, 216, 0.35);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  &__wrap {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: $secondary_l2 url(../img/black-friday/black-frider-bg.png)no-repeat center center/cover;
+    padding: 45px 0 30px 60px;
+  }
+  &__title {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #000;
+    margin-bottom: 32px;
+    max-width: 544px;
+  }
+  &__offer {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 107px;
+    color: #FF3E3E;
+  }
+  &__stoke {
+    width: fit-content;
+    padding: 32px;
+    background: $secondary_d4;
+    position: relative;
+    margin-bottom: 100px;
+    &:before {
+      content: "";
+      display: block;
+      width: 194px;
+      height: 140px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(81px, 39px);
+      background: url(../img/black-friday/spock-img.png)no-repeat center center/cover;
+    }    
+  }
+  &__stoke_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: $light;
+  }
+  &_btn {
+    background: #FF3E3E;
+    padding: 16px 64px;
+    display: block;
+    width: fit-content;
+  }
+  &__wrap_decoration {
+    position: relative;
+    height: 100%;
+  }
+  &__wrap_decoration_offer {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: fit-content;
+    z-index: 2;
+  }
+  &__wrap_decoration_subtitle {
+    color: #000;
+    text-align: right;
+  }
+   &__wrap_decoration_title {
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 183px;
+    text-align: right;
+    text-decoration-line: underline;  
+  }
+  &__mobile_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000;
+    text-decoration-line: underline;
+  }
+  &__mobile_subtitle {
+    margin-bottom: 16px;
+    color: #000;
+  }
+}
+
+@include desktop {
+  
+  .black-friday__wrap {
+    padding: 45px 0 30px 30px;
+  }
+  .black-friday__wrap_decoration_title {
+    font-size: 130px;
+    line-height: 163px;
+  }
+}
+@include laptop {
+  .black-friday {
+    padding-top: 32px;
+  }
+  .black-friday__circle-1 {
+    display: none;
+  }
+  .black-friday__circle-2 {
+    top: 160px;
+    left: 400px;
+    transform: translate(0,180px);
+  }
+  .black-friday__circle-3 {
+    bottom: 250px;
+    right: unset;
+    left: 80%;
+    transform: translate(0, 0);
+    z-index: 1;
+  }
+  .black-friday__circle-4 {
+    bottom: unset;
+    right: unset;
+    left: 145px;
+    top: 534px;
+    transform: translate(0, 0);
+  }
+}
+@include tablet {
+  .black-friday__circle-2 {
+    width: 43px;
+    height: 43px;
+    top: 172px;
+    left: 416px;
+  }
+  .black-friday__circle-3 {
+    width: 66px;
+    height: 66px;
+    bottom: 242px;
+    left: 79%;
+
+  }
+  .black-friday__circle-4 {
+    width: 23px;
+    height: 23px;
+    left: 145px;
+    top: 549px;
+  }
+}
+@media screen and (max-width: 605.5px) {
+  .black-friday {
+    padding-top: 32px;
+  }
+  .black-friday__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    max-width: 320px;
+  }
+  .black-friday__offer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 56px;
+  }
+  .black-friday__stoke {
+    padding: 16px;
+  }
+  .black-friday__stoke_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .black-friday__stoke:before {
+    width: 124px;    
+    transform: translate(54px,50px);
+  }
+  .black-friday__circle-2 {
+    top: 78px;
+    left: 290px;
+  }
+  .black-friday__circle-4 {
+    left: 105px;
+    top: 402px;
+  }
+}
+@media screen and (max-width: 387.5px) {
+  .black-friday {
+    padding-top: 32px;
+  }
+  .black-friday__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .black-friday__offer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .black-friday__stoke {
+    padding: 16px;
+  }
+  .black-friday__stoke_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .black-friday__circle-2 {
+      top: 0px;
+      left: 190px;
+  }
+  .black-friday__circle-4 {
+    left: 90px;
+    top: 276px;
+  }
+  .black-friday__circle-3 {
+    left: 70%;
+    bottom: 266px;
+  }
+}
+
+/*****End Black Friday*****/
+
 /*****Main Screen*****/
 .main-screen {
   padding-top: 116px;
